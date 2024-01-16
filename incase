@@ -1,0 +1,77 @@
+        <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_53905d0537125ce219396f7b5fd6cbee8d8b3b96ebe876b8684aa60dba5b9dee.png?w=1024&h=1024" alt=""/>
+            <h2>Fruits and Vegetables</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_0e846d664a9eea41ec98f7eb4b5ee4334e467ea51448b8cfb5f87f6f30b364bb.png?w=1024&h=1024" alt=""/>
+            <h2>Dairy and Breakfast</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_0e846d664a9eea41ec98f7eb4b5ee4334e467ea51448b8cfb5f87f6f30b364bb.png?w=1024&h=1024" alt=""/>
+            <h2>Eggs, Fish and Meat</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_1c33ae4bb7a623264fcdaa43a117aa3990d2df230b6cef33b678ee3df6235140.png?w=1024&h=1024" alt=""/>
+            <h2>Cold drinks and juices</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_817fe54400afc2221413404a4d0f2a814db2fb22a9e2248f8635646d7a36a00c.png?w=1024&h=1024" alt=""/>
+            <h2>Snacks and Munchies</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_141c9d38cfad939358c40282c29cb5963505b0e2235dda90b1dac3d46abe9374.png?w=1024&h=1024" alt=""/>
+            <h2>Icy Delights</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
+
+            <div className= "card">
+            <img className="product--image"
+            src="https://qph.cf2.poecdn.net/main-sdxl_f61ae215d734387e13e129753471671a10119f1657c87ea22d79ef9043705d4f.png?w=1024&h=1024" alt=""/>
+            <h2>Bath and Body</h2>
+            <p className= "price">$20.99</p>
+            <p>some description about product..</p>
+            <p>
+                <button>Add to Cart</button>
+            </p>
+            </div>
