@@ -5,12 +5,11 @@ import "react-multi-carousel/lib/styles.css";
 import Product  from "./Product";
 import Details from "./Details";
 
-
 const TopCategoriesPage = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },
@@ -82,20 +81,37 @@ const TopCategoriesPage = () => {
 ]
 
 const products = productData.map((item) => (
-  <Link key={item.id} to={`/${item.name.toLowerCase().replace(/\s+/g, '-')}`}>
-    <Product
-      name={item.name}
-      url={item.imageurl}
-      price={item.price} // Assuming you have a price property in your data
-      description={item.description} // Assuming you have a description property in your data
-    />
-  </Link>
+  <Product
+    key={item.id}
+    name={item.name}
+    url={item.imageurl}
+    price={item.price}
+    description={item.description}
+  />
 ));
+
+
+
 
 return (
   <div className="HomePage">
-    <h1>Shop from Top Categories</h1>
-    <Carousel responsive={responsive}>{products}</Carousel>
+    <div className="shop-from-top-categories">
+      <div className="top-categories-frame">
+        <div className="title">
+          <div className="shop-from-top-categories-parent">
+            <div className="heading-wrapper">
+              <h1 className="shop-from-top-container">
+                <span>{`Shop From `}</span>
+                <span className="top-categories">Top Categories</span>
+              </h1>
+            </div>
+            <div className="line-div" />
+          </div>
+          <div className="title-child" />
+        </div>
+      </div>
+      <Carousel responsive={responsive}>{products}</Carousel>
+    </div>
   </div>
 );
 };
@@ -104,7 +120,7 @@ const FeaturedBrandsPage = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },

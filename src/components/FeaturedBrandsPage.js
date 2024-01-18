@@ -1,14 +1,21 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from 'react-router-dom';
 import { Input } from "./Input";
+
+
+import nestleImage from "../Assets/nestleproductphoto.jpg";
+import pAndGImage from "../Assets/png.jpg";
+import unileverImage from "../Assets/unilever.jpg";
+import jAndJImage from "../Assets/jnj.png";
+import samsungImage from "../Assets/samsung.jpg";
+import panasonicImage from "../Assets/panasonic.jpg";
 
 const FeaturedBrandsPage = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },
@@ -27,7 +34,7 @@ const FeaturedBrandsPage = () => {
   const BrandsData =[
     {
         id:1,
-        imageurl: "",
+        imageurl: nestleImage,
         name:"Nestle",
         
 
@@ -36,7 +43,7 @@ const FeaturedBrandsPage = () => {
     },
     {
         id:2,
-        imageurl: "",
+        imageurl: pAndGImage,
         name:"Proctor and Gamble",
         
         
@@ -44,7 +51,7 @@ const FeaturedBrandsPage = () => {
     },
     {
         id:3,
-        imageurl: "",
+        imageurl: unileverImage,
         name:"Unilever",
         
         
@@ -52,7 +59,7 @@ const FeaturedBrandsPage = () => {
     },
     {
         id:4,
-        imageurl: "",
+        imageurl: jAndJImage,
         name:"Johnson & Johnson",
         
         
@@ -60,16 +67,8 @@ const FeaturedBrandsPage = () => {
     },
     {
         id:5,
-        imageurl: "",
+        imageurl: samsungImage,
         name:"Samsung",
-        
-        
-
-    },
-    {
-        id:6,
-        imageurl: "",
-        name:"Colgate Palmolive",
         
         
 
@@ -77,7 +76,7 @@ const FeaturedBrandsPage = () => {
     
     {
         id:7,
-        imageurl: "",
+        imageurl: panasonicImage,
         name:"Panasonic",
         
         
@@ -96,11 +95,27 @@ const input = BrandsData.map((item) => (
 
   return (
     <div className="HomePage">
-      <h1>Featured Brands</h1>
-      <Carousel responsive={responsive}>{input}</Carousel>
+      <div className="shop-from-top-categories">
+        <div className="top-categories-frame">
+          <div className="title">
+            <div className="shop-from-top-categories-parent">
+              <div className="heading-wrapper">
+                <h1 className="shop-from-top-container">
+                  <span>{`Featured `}</span>
+                  <span className="top-categories">Brands</span>
+                </h1>
+              </div>
+              <div className="line-div" />
+            </div>
+            <div className="title-child" />
+          </div>
+        </div>
+        <Carousel responsive={responsive}>{input}</Carousel>
+      </div>
     </div>
   );
-};
+  };
+
 
 export default FeaturedBrandsPage;
 

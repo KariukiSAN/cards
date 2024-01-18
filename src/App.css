@@ -1,3 +1,70 @@
+.top-categories {
+  color: rgba(42, 79, 151, 0.96);
+}
+
+.shop-from-top-container {
+  margin: 0;
+  margin-top: 0px;
+  position: relative;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.line-div {
+  position: relative;
+  border-top: 3px solid rgba(42, 79, 151, 0.96);
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+}
+
+/* Existing styles remain the same */
+
+.shop-from-top-categories-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 20px; /* Add margin-bottom to create space between heading and carousel */
+  margin-right:20px;
+  margin-top: 25px;
+}
+
+.title-child {
+  position: relative;
+  border-top: 1px solid #ededed;
+  width: 100%;
+  height: 1px;
+  margin-left: 0;
+}
+
+/* Additional styles for the carousel container */
+.shop-from-top-categories {
+  margin-top: 0px; /* Adjust the margin-top value as needed */
+}
+
+/* Add a new style for the heading wrapper */
+.heading-wrapper {
+  margin-right: auto; /* Adjust the margin-right value to move the heading to the right */
+}
+
+
+
 .card {
   display: flex;
   flex-direction: column;
@@ -5,7 +72,8 @@
   justify-content: center;
   border: 1px solid #ccc;
   padding: 20px;
-  margin: 5px; /* Adjust the margin as per your preference */
+  margin-top: 70px;
+  margin: 5px;
   width: 150px;
 }
 
@@ -16,213 +84,164 @@
 }
 
 .price {
-  font-weight: bold;
+  margin-bottom: 10px; /* Add margin to create space between price and button */
 }
 
-button {
-  background-color: #007bff;
+.cta {
+  width: 70.5px;
+  position: absolute;
+  bottom: 15px; /* Adjust bottom spacing as needed */
+  right: 70px; /* Adjust right spacing as needed */
+  background-color: transparent;
+  color: navy;
+  border: 2px solid navy;
+  border-radius: 5px; /* Adjust border-radius for button shape */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.cta:hover {
+  background-color: rgba(42, 79, 151, 0.96);
   color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  border-color: rgba(42, 79, 151, 0.96);
 }
 
-button:hover {
-  background-color: #0056b3;
-}
+/* Other styles remain unchanged */
 
-
-.card-container {
-  display: flex;
-  justify-content: space-between; /* Distribute cards evenly on one row */
-  flex-wrap: nowrap; /* Ensure all cards stay in one row */
-}
-
-.card {
-  flex: 0 0 calc(14.28% - 10px); /* Adjust the width of each card */
-  background-color: #f8f9fa; /* Light background color, change as needed */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  max-width: 200px; /* Decreased the max-width for smaller cards */
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px 12px 0 0;
-}
-
-.card label {
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.category-section {
-  margin-bottom: 40px;
-}
-
-.card-details {
-  padding: 20px;
-}
-
-.card-off {
-  background-color: #1c74af;
-  color: #fff;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 16px;
-  margin-bottom: 12px;
+.off {
+  position: relative;
+  line-height: 16px;
   display: inline-block;
+  width: 35px;
 }
-
-.card-details h3 {
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-.card-details p {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.card-details button {
-  background-color: #c5771e; /* Green color for buttons, change as needed */
+.offer {
+  position: absolute;
+  height: 15%;
+  width: 20%;
+  top: 0;
+  right: 0;
+  bottom: 900%;
+  left: 73%;
+  border-radius: 0 16px 0 16px;
+  background-color: rgba(42, 79, 151, 0.96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 12px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.card-details button:hover {
-  background-color: #c5771e;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.heading {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sidebar {
-  flex: 0 0 100%; /* Full width for the sidebar */
-  margin-bottom: 20px; /* Add some space between heading and sidebar */
-}
-
-.filter-section {
-  margin-bottom: 20px;
-}
-
-.filter-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-label {
-  text-align: center;
-  display: block;
-  margin-bottom: 5px;
-}
-
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .card {
-  width: 200px !important;
-  flex: 0 0 200px; /* Adjust the width of each card */
-  margin: 20px;
-  margin-bottom: 20px;
-  background-color: #f8f9fa;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 76px;
+  left: 246px;
+  width: 219px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.title-item {
+  position: absolute;
+  top: 45.5px;
+  left: -0.5px;
+  border-top: 1px solid #ededed;
+  box-sizing: border-box;
+  width: 1199px;
+  height: 1px;
+}
+.vegetables-fruits {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 319px;
+}
+.title-inner {
+  position: relative;
+  border-top: 3px solid rgba(42, 79, 151, 0.96);
+  box-sizing: border-box;
+  width: 208px;
+  height: 3px;
+}
+.title2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.view-all1 {
+  position: relative;
+  line-height: 18px;
+}
+.arrow-down-2 {
+  position: relative;
+  width: 18px;
+  height: 18px;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
+  object-fit: contain;
 }
-
-.card:hover {
-  transform: scale(1.05);
+.view-all-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
 }
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px 12px 0 0;
+.view-all {
+  position: absolute;
+  top: 6px;
+  left: 1117px;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  font-size: 16px;
+  color: #222;
 }
-
-
-
-.filter-card {
-flex: 0 0 calc(30% - 10px); /* Adjust the width of the filter card */
-margin-bottom: 20px;
-background-color: #ffffff; /* White background for the filter card */
-border-radius: 15px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-overflow: hidden;
-padding: 20px;
+.title1 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 1202px;
+  height: 46px;
+  font-size: 24px;
+  color: #666;
 }
-
-.filter-card h2 {
-font-size: 24px;
-margin-bottom: 10px;
+.vegetables-fruits-frame {
+  position: relative;
+  width: 1203px;
+  height: 371px;
 }
-
-.card label {
-  display: block;
+.vegetables-fruits {
+  position: absolute;
+  top: 1158px;
+  left: -20px;
+  background-color: #fff;
+  width: 1440px;
+  height: 469px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 117px;
+  box-sizing: border-box;
+  text-align: left;
   font-size: 15px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.card-details {
-  padding: 20px;
-}
-
-.card-details p {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.card-details button {
-  background-color: #c5771e;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 12px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.card-details button:hover {
-  background-color: #1c74af;
+  color: #222;
+  font-family: Poppins;
 }
