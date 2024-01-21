@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Input } from "./Input";
-
+import "./FTC.css";
 
 import nestleImage from "../Assets/nestleproductphoto.jpg";
 import pAndGImage from "../Assets/png.jpg";

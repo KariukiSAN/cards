@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from 'react-router-dom';
-
+import "./FTC.css";
 import { Details } from "./Details";
 
 const FruitsVegPage = () => {

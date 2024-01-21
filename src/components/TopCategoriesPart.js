@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import "react-multi-carousel/lib/styles.css";
 import Product  from "./Product";
 import Details from "./Details";
+import "./FTC.css";
 
 const TopCategoriesPage = () => {
   const responsive = {
