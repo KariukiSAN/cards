@@ -82,13 +82,14 @@ const TopCategoriesPage = () => {
 ]
 
 const products = productData.map((item) => (
-  <Product
-    key={item.id}
-    name={item.name}
-    url={item.imageurl}
-    price={item.price}
-    description={item.description}
-  />
+  <Link key={item.id} to={`/fruits-and-vegetables`}>
+    <Product
+      name={item.name}
+      url={item.imageurl}
+      price={item.price}
+      description={item.description}
+    />
+  </Link>
 ));
 
 
